@@ -26,7 +26,7 @@ public class TraceId {
      * traceID는 같아도 level은 하나씩 증가해야함.
      * @return
      */
-    private TraceId createNextId(){
+    public TraceId createNextId(){
         return new TraceId(id, level+1);
     }
 
