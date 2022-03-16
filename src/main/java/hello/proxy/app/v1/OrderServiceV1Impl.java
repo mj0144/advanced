@@ -11,6 +11,6 @@ public class OrderServiceV1Impl implements OrderServiceV1 {
 
     @Override
     public void orderItem(String itemId) {
-
+        orderRepository.save(itemId);
     }
 }
